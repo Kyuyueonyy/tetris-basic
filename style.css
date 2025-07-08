@@ -1,0 +1,76 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.game-container {
+    display: flex;
+    gap: 20px;
+}
+
+.tetris-grid {
+    display: grid;
+    grid-template-columns: repeat(10, 30px);
+    grid-template-rows: repeat(20, 30px);
+    background-color: #ddd;
+    border: 5px solid #333;
+    width: 300px;
+    height: 600px;
+}
+
+.tetris-grid div {
+    width: 30px;
+    height: 30px;
+    background-color: #ccc;
+    border: 1px solid #bbb;
+    box-sizing: border-box;
+}
+
+.game-info {
+    text-align: center;
+}
+
+#start-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.next-block-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 20px);
+    grid-template-rows: repeat(4, 20px);
+    width: 80px;
+    height: 80px;
+    background-color: #ddd;
+    border: 2px solid #333;
+    margin: 0 auto;
+}
+
+.next-block-grid div {
+    width: 20px;
+    height: 20px;
+    background-color: #ccc;
+    border: 1px solid #bbb;
+    box-sizing: border-box;
+}
+
+/* Tetromino Colors */
+.I { background-color: cyan; }
+.J { background-color: blue; }
+.L { background-color: orange; }
+.O { background-color: yellow; }
+.S { background-color: lime; }
+.T { background-color: purple; }
+.Z { background-color: red; }
+
+.taken {
+    /* No specific style needed for taken squares unless you want to change their appearance */
+}
